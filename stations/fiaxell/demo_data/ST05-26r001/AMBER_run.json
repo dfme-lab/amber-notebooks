@@ -1,0 +1,39 @@
+{
+  "amber": {
+    "version": 1,
+    "run_url": "https://test.next.dfme.eu/runs/ST05-26r001"
+  },
+  "folder": "ST05-26r001_JK26s007_SOFC-button-cell-demo",
+  "run": {
+    "code": "ST05-26r001",
+    "title": "SOFC button cell, 700-800 C, H2 + 3 % H2O (DEMO, fictitious)",
+    "station": {
+      "code": "ST05",
+      "handle": "fiaxell",
+      "name": "Fiaxell SOFC test station"
+    },
+    "operator": "JK",
+    "planned_start": "2026-11-10T06:00:00+00:00",
+    "planned_end": "2026-11-11T10:00:00+00:00",
+    "actual_start": "2026-11-10T06:00:00+00:00",
+    "actual_end": "2026-11-11T10:00:00+00:00",
+    "params": {
+      "active_area_cm2": 1.0
+    },
+    "data_location": "demo data in dfme-lab/amber-notebooks"
+  },
+  "experiment": {
+    "code": "JK26e003",
+    "title": "Button cells with the new LSCF cathode (DEMO)",
+    "question": "Does the new cathode lower the area specific resistance at 700 C?"
+  },
+  "samples": [
+    {
+      "code": "JK26s007-01",
+      "sample_set": "JK26s007",
+      "title": "NiO-YSZ | YSZ | GDC | LSCF button cell (DEMO)",
+      "composition": "LSCF cathode, 1 cm2"
+    }
+  ],
+  "created": "2026-11-10T06:00:00+00:00"
+}
