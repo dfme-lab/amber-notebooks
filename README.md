@@ -15,7 +15,7 @@ Notebook templates for the stations of the DFME group, opened from the run page 
   from amber_client import Amber
   ```
 
-  Your key: a read-only key from AMBER › Settings › API keys, as the Colab secret `AMBER_KEY`
+  Your key: a read-only key from AMBER › API & assistants, as the Colab secret `AMBER_KEY`
   or in the file `~/.amber_key`. Never in a notebook.
 
 To add a template for a station: copy `stations/_example/`, change it, open a pull request; then in

@@ -4,7 +4,7 @@ Standard library only, so it works in Colab, JupyterHub and a plain Python witho
 It only reads; nothing is written to AMBER (D-141). Every read goes through the public API with
 your own key, so you see exactly what you may see in the app.
 
-The key (``amber_uk_...``, a read-only key is enough; AMBER > Settings > API keys) is found in
+The key (``amber_uk_...``, a read-only key is enough; AMBER > API & assistants (the API keys page)) is found in
 this order, and never has to be typed into the notebook:
 
 1. the ``AMBER_KEY`` environment variable,
@@ -60,9 +60,12 @@ def _colab_secret(name: str) -> str | None:
 
 
 def _check(key: str, where: str) -> str:
-    key = key.strip()
+    key = key.strip().strip("\"'").strip()
     if not key.startswith(KEY_PREFIX):
-        raise AmberError(f"{where} does not hold an AMBER key ({KEY_PREFIX}...)")
+        raise AmberError(
+            f"{where} does not hold an AMBER key ({KEY_PREFIX}...): copy the whole key shown"
+            " once when you make it in AMBER > API & assistants"
+        )
     return key
 
 
