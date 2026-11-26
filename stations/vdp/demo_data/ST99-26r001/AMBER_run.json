@@ -1,0 +1,39 @@
+{
+  "amber": {
+    "version": 1,
+    "run_url": null
+  },
+  "folder": "ST99-26r001_JK26s011_MnCo2O4-vdP-demo",
+  "run": {
+    "code": "ST99-26r001",
+    "title": "vdP conductivity of a MnCo2O4 pellet, 900-300 C in air (DEMO, fictitious)",
+    "station": {
+      "code": "ST99",
+      "handle": "vdp-demo",
+      "name": "van der Pauw (demo)"
+    },
+    "operator": "AN",
+    "actual_start": "2026-11-12T07:00:00+00:00",
+    "actual_end": "2026-11-13T07:57:30+00:00",
+    "params": {
+      "thickness_mm": 1.12,
+      "current_mA": 100.0,
+      "atmosphere": "air"
+    },
+    "data_location": "demo data in dfme-lab/amber-notebooks"
+  },
+  "experiment": {
+    "code": "AN26e002",
+    "title": "Conductivity of spinel coating materials (DEMO)",
+    "question": "What is the activation energy of MnCo2O4 between 300 and 900 C?"
+  },
+  "samples": [
+    {
+      "code": "JK26s011-01",
+      "sample_set": "JK26s011",
+      "title": "MnCo2O4 pellet, sintered 1100 C (DEMO)",
+      "composition": "MnCo2O4"
+    }
+  ],
+  "created": "2026-11-12T07:00:00+00:00"
+}
